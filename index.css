@@ -1,0 +1,128 @@
+.filp-modal.login > .modal-login,
+.filp-modal.register > .modal-register {
+    backface-visibility: hidden;
+    transform: translate(-50%,-50%) rotateY(0deg);
+    transition: all 1s;
+}
+
+.filp-modal.register > .modal-login,
+.filp-modal.login > .modal-register {
+    backface-visibility: hidden;
+    transform: translate(-50%,-50%) rotateY(180deg);
+    transition: all 1s;
+}
+
+
+
+body{
+    position: relative;
+}
+
+header{
+    position: absolute;
+    right: 26px;
+    top: 30px;
+}
+
+header .iconfont{
+    font-size: 30px;
+    font-weight: bold;
+    color: white
+}
+
+main{
+    background: url('img/timg.jpg');
+    background-size: cover
+}
+
+.display {
+    display: none;
+}
+
+a.active{
+    border-bottom: 3px solid #ccc;
+}
+
+.modal-login{
+    width: 500px;
+    height: 270px;
+}
+
+.modal-register {
+    width: 500px;
+    height: 350px;
+}
+
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: #ccc;
+    background: #fff;
+    box-shadow:  0 3px 4px 5px rgba(0,0,0,0.2);
+    padding: 20px 20px;
+    border-radius: 20px;
+}
+
+.modal>span{
+    float: right;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close{
+    font-size: 0px;
+    text-align: center;
+}
+
+.modal .close a{
+    font-size: 16px;
+    padding: 5px 4px;
+    margin: 0 10px;
+}
+
+form{
+    width: 280px;
+    margin: 30px auto 0;
+    position: relative;
+}
+
+form input {
+    width:220px;
+    border:none;
+    margin-left: 8px;
+    outline:none;
+    color: #ccc
+}
+
+form span {
+    display: inline-block;
+}
+
+.login {
+    border:1px solid #ccc;
+    padding: 5px 8px;
+}
+
+.password {
+    margin-top: 20px;
+}
+
+.login>.iconfont {
+    font-size: 20px;
+    color: #ccc
+}
+
+input[type=submit]{
+    display: inline-block;
+    width:140px;
+    height: 36px;
+    color: black;
+    font-size: 16px;
+    position: absolute;
+    left: 50%;
+    margin-left: -70px;
+    margin-top: 20px;
+    border-radius: 6px;
+}
